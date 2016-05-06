@@ -1,5 +1,6 @@
 ## Nav dir
 alias ..='cd ..'
+alias ...='cd ../..'
 alias inst='cd ~/nobackup/instance/'
 
 ## Git
