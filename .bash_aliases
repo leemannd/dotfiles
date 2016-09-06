@@ -28,6 +28,7 @@ alias docoro='doco run --rm -p 8888:8069 odoo src/odoo.py'
 
 ## Miscellaneous
 alias neuch='fahrplan de epfl à neuchatel'
+alias auv='fahrplan de epfl à auvernier'
 alias fdd='find . -type d -name'
 alias aliasn='vi ~/.bash_aliases'
 
