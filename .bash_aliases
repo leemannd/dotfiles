@@ -20,10 +20,9 @@ alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %
 alias doco='docker-compose'
 alias docu='docker-compose up -d'
 alias docl='docker-compose logs'
-alias docsh='docker-compose run --rm odoo ./src/odoo.py shell'
+alias docsh='docker-compose run --rm odoo odoo.py --workers=0 shell'
 alias bro='chromium-browser --incognito $(docker-compose port odoo 8069)'
-alias dococo='doco run --rm -p 8888:8069 odoo src/odoo.py -u specific_membership'
-alias docoro='doco run --rm -p 8888:8069 odoo src/odoo.py'
+alias docoro='doco run --rm -p 8888:8069 odoo odoo.py --workers=0 '
 
 
 ## Miscellaneous
