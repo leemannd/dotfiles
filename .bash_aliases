@@ -7,6 +7,7 @@ alias inst2='cd ~/sauvegarde/instances/'
 
 ## Git
 alias gb='git branch -a'
+alias gbd='git branch -d'
 alias gs='git status'
 alias gd='git diff'
 alias gck='git checkout'
@@ -23,6 +24,7 @@ alias docl='docker-compose logs'
 alias docsh='docker-compose run --rm odoo odoo.py --workers=0 shell'
 alias bro='chromium-browser --incognito $(docker-compose port odoo 8069)'
 alias docoro='doco run --rm -p 8888:8069 odoo odoo.py --workers=0 '
+alias dodb='PGPASSWORD=odoo psql -h localhost -p $(docker-compose port db 5432 | cut -d : -f 2) -U odoo odoodb'
 
 
 ## Miscellaneous
