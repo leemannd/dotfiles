@@ -21,10 +21,11 @@ alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %
 alias doco='docker-compose'
 alias docu='docker-compose up -d'
 alias docl='docker-compose logs'
-alias docsh='docker-compose run --rm odoo odoo.py --workers=0 shell'
+alias docsh='docker-compose run --rm odoo odoo --workers=0 bash'
 alias bro='chromium-browser --incognito $(docker-compose port odoo 8069)'
-alias docoro='doco run --rm -p 8888:8069 odoo odoo.py --workers=0 '
+alias docoro='doco run --rm -p 8888:8069 odoo odoo --workers=0'
 alias dodb='PGPASSWORD=odoo psql -h localhost -p $(docker-compose port db 5432 | cut -d : -f 2) -U odoo odoodb'
+alias docotest='docker-compose run --rm -e DEMO=True -e DB_NAME=mytestdb odoo odoo --workers=0 -i'
 
 
 ## Miscellaneous
