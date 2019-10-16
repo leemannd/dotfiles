@@ -3,7 +3,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias inst='cd ~/nobackup/instance/'
 alias db='cd ~/nobackup/db/'
-alias inst2='cd ~/sauvegarde/instances/'
+alias inst2='cd /home/dleemann/sauvegarde/db'
 
 ## Git
 alias gb='git branch -a'
@@ -27,12 +27,20 @@ alias docl='docker-compose logs'
 alias docsh='docker-compose run --rm odoo odoo --workers=0 bash'
 alias bro='chromium-browser --incognito $(docker-compose port odoo 8069)'
 alias docoro='doco run --rm -p 8888:8069 odoo odoo --workers=0'
+alias docoroprod='doco run --rm -e DB_NAME=prod -p 8888:8069 odoo odoo --workers=0'
 alias dodb='PGPASSWORD=odoo psql -h localhost -p $(docker-compose port db 5432 | cut -d : -f 2) -U odoo odoodb'
+alias dodbprod='PGPASSWORD=odoo psql -h localhost -p $(docker-compose port db 5432 | cut -d : -f 2) -U odoo prod'
 alias docotest='docker-compose run --rm -e DEMO=True -e DB_NAME=mytestdb odoo odoo --workers=0 -i'
 alias dopwd='source ~/scripts/uspwd.sh'
 
+## Odoo
+### requires pip install bobtemplates.odoo
+alias odoo-new-module='mrbob bobtemplates.odoo:addon'
+alias odoo-new-model='mrbob bobtemplates.odoo:model'
+alias odoo-new-test='mrbob bobtemplates.odoo:test'
 
 ## Miscellaneous
+### requires pip install fahrplan
 alias neuch='fahrplan de epfl à neuchatel'
 alias auv='fahrplan de epfl à auvernier'
 alias fdd='find . -type d -name'
