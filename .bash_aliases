@@ -2,7 +2,6 @@
 alias ..='cd ..'
 alias ...='cd ../..'
 alias inst='cd ~/nobackup/instance/'
-alias db='cd ~/nobackup/db/'
 alias inst2='cd /home/dleemann/sauvegarde/db'
 
 ## Git
