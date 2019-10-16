@@ -19,6 +19,7 @@ alias glg="git log --decorate --graph --abbrev-commit --date=relative"
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 alias create_instance_docker='cookiecutter git@github.com:camptocamp/odoo-template.git'
 alias gsub='git submodule init && git submodule sync && git submodule update'
+alias gri='git rebase --autosquash -i'
 
 ## Docker
 alias doco='docker-compose'
