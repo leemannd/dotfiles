@@ -3,6 +3,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias inst='cd ~/nobackup/instance/'
 alias inst2='cd /home/dleemann/sauvegarde/db'
+alias c2c_vpn_all='sudo openvpn /etc/openvpn/scripts/c2c-redirect-traffic.conf'
 
 ## Git
 alias gb='git branch -a'
@@ -19,6 +20,8 @@ alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %
 alias create_instance_docker='cookiecutter git@github.com:camptocamp/odoo-template.git'
 alias gsub='git submodule init && git submodule sync && git submodule update'
 alias gri='git rebase --autosquash -i'
+alias gc='git clone'
+alias gro='git fetch origin master && git rebase origin/master'
 
 ## Docker
 alias doco='docker-compose'
