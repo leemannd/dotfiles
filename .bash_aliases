@@ -42,6 +42,9 @@ alias odoo-new-module='mrbob bobtemplates.odoo:addon'
 alias odoo-new-model='mrbob bobtemplates.odoo:model'
 alias odoo-new-test='mrbob bobtemplates.odoo:test'
 
+## OCA
+alias pre-commitoca='pre-commit run --all --show-diff-on-failure --verbose --color always'
+
 ## Miscellaneous
 ### requires pip install fahrplan
 alias neuch='fahrplan de epfl à neuchatel'
