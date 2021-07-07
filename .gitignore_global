@@ -1,0 +1,9 @@
+#python
+*.pyc
+
+#pyenv local configuration
+.python-version
+
+
+# pycharm
+.idea
