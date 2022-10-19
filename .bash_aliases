@@ -29,8 +29,8 @@ alias docu='docker-compose up -d'
 alias docl='docker-compose logs'
 alias docsh='docker-compose run --rm odoo odoo --workers=0 bash'
 alias bro='chromium-browser --incognito $(docker-compose port odoo 8069)'
-alias docoro='doco run --name=odoo --rm -p 8888:8069 odoo odoo --workers=0'
-alias docoroprod='doco run --rm -e DB_NAME=prod -p 8888:8069 odoo odoo --workers=0'
+alias docoro='doco run --rm -p 8888:8069 odoo odoo --workers=0'
+alias docoroprod='doco run --rm -e DB_NAME=prod -p 8888:8069 odoo odoo --workers=0 --max-cron-threads=0'
 alias dodb='PGPASSWORD=odoo psql -h localhost -p $(docker-compose port db 5432 | cut -d : -f 2) -U odoo odoodb'
 alias dodbprod='PGPASSWORD=odoo psql -h localhost -p $(docker-compose port db 5432 | cut -d : -f 2) -U odoo prod'
 alias docotest='docker-compose run --rm -e DEMO=True -e DB_NAME=mytestdb odoo odoo --workers=0 -i'
@@ -52,4 +52,7 @@ alias auv='fahrplan de epfl à auvernier'
 alias fdd='find . -type d -name'
 alias aliasn='vi ~/.bash_aliases'
 alias space='sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL'
+
+## invoke on c2c projects
+alias add-pending='invoke submodule.add-pending'
 
