@@ -25,6 +25,7 @@ alias gc='git clone'
 alias gro='git fetch origin master && git rebase origin/master'
 
 ## Docker
+alias docker-compose='docker compose'
 alias doco='docker-compose'
 alias docu='docker-compose up -d'
 alias docl='docker-compose logs'
