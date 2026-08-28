@@ -49,8 +49,6 @@ alias pre-commitoca='pre-commit run --all --show-diff-on-failure --verbose --col
 
 ## Miscellaneous
 ### requires pip install fahrplan
-alias neuch='fahrplan de epfl à neuchatel'
-alias auv='fahrplan de epfl à auvernier'
 alias fdd='find . -type d -name'
 alias aliasn='vi ~/.bash_aliases'
 alias space='sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL'
